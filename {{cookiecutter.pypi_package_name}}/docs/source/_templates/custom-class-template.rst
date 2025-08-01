@@ -1,3 +1,4 @@
+{% raw %}
 {{ fullname | escape | underline}}
 
 .. currentmodule:: {{ module }}
@@ -34,3 +35,4 @@
    {% endblock %}
 
    .. rubric:: {{ _('Methods') }}
+   {% endraw %}
