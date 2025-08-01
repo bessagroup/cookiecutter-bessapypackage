@@ -1,4 +1,20 @@
-"""Top-level package for {{ cookiecutter.project_name }}."""
+"""
+{{ cookiecutter.project_name }} - {{ cookiecutter.project_short_description }}
+"""
 
-__author__ = """{{ cookiecutter.full_name }}"""
-__email__ = '{{ cookiecutter.email }}'
+#                                                                       Modules
+# =============================================================================
+
+# Standard
+
+# Third-party
+
+# Local
+
+#                                                        Authorship and Credits
+# =============================================================================
+__author__ = '{{ cookiecutter.full_name }} ({{ cookiecutter.email }})'
+__credits__ = ['{{ cookiecutter.full_name }}']
+__status__ = 'Stable'
+#
+# =============================================================================

@@ -8,5 +8,6 @@
   "project_short_description": "Python Boilerplate contains all the boilerplate you need to create a Python package.",
   "pypi_username": "{{ cookiecutter.github_username }}",
   "first_version": "0.1.0",
-  "__gh_slug": "{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}"
+  "__gh_slug": "{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}",
+  "__friendly_data": "January 1 2000"
 }
