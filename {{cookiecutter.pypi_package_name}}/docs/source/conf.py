@@ -24,7 +24,7 @@ for path in src_dir:
 
 project = "{{ cookiecutter.project_name }}"
 author = "{{ cookiecutter.full_name }}"
-copyright = "{% now 'local', ' % Y' %}, {{ cookiecutter.full_name }}"
+copyright = "{% now 'local', '%Y' %}, {{ cookiecutter.full_name }}"
 version = "{{ cookiecutter.first_version }}"
 release = "{{ cookiecutter.first_version }}"
 

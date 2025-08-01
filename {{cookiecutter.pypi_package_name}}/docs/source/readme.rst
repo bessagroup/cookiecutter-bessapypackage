@@ -4,7 +4,7 @@
    :align: center
 
 
-| `GitHub <https://github.com/{{cookiecutter.__gh_slug}}>`__ |
+`GitHub <https://github.com/{{cookiecutter.__gh_slug}}>`__ |
 
 **First publication:** {% now 'local', '%B %-d, %Y' %}
 
@@ -22,13 +22,13 @@ Authorship
 ----------
 
 **Authors**:
-    - {{ cookiecutter.full_name }} ([{{ cookiecutter.email }}](mailto:{{ cookiecutter.email }}))
+    - {{ cookiecutter.full_name }} (`{{ cookiecutter.email }} <mailto:{{ cookiecutter.email }}>`__)
 
 **Authors afilliation:**
     - {{ cookiecutter.affiliation }} (Bessa Research Group)
 
 **Maintainer:**
-    - {{ cookiecutter.full_name }} ([{{ cookiecutter.email }}](mailto:{{ cookiecutter.email }}))
+    - {{ cookiecutter.full_name }} (`{{ cookiecutter.email }} <mailto:{{ cookiecutter.email }}>`__)
 
 **Maintainer afilliation:**
     - {{ cookiecutter.affiliation }} (Bessa Research Group)
