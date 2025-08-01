@@ -15,7 +15,7 @@
 
 ## Summary
 
-This repository serves as a template for Python code. The template is compliant to the [Bessa Research Group Python Development Code of Conduct](https://github.com/bessagroup/python_code_of_conduct)
+<!-- Write here a longer description of the package, what it does, and why it is useful. -->
 
 ## Statement of need
 
@@ -27,22 +27,22 @@ This repository serves as a template for Python code. The template is compliant 
 - {{ cookiecutter.full_name }} ([{{ cookiecutter.email }}](mailto:{{ cookiecutter.email }}))
 
 **Authors afilliation:**
-- Bessa Research Group @ Brown University
+- {{ cookiecutter.affiliation }} (Bessa Research Group)
 
 **Maintainer:**
 - {{ cookiecutter.full_name }} ([{{ cookiecutter.email }}](mailto:{{ cookiecutter.email }}))
 
 **Maintainer afilliation:**
-- Bessa Research Group @ Brown University
+- {{ cookiecutter.affiliation }} (Bessa Research Group)
 
 
 ## Getting started
 
-<!-- Write here the how users should get started with this package -->
+<!-- Write here how users should get started with this package -->
 
 ## Community Support
 
-If you find any **issues, bugs or problems** with this template, please use the [GitHub issue tracker](https://github.com/{{cookiecutter.__gh_slug}}/issues) to report them.
+If you find any **issues, bugs or problems** with this package, please use the [GitHub issue tracker](https://github.com/{{cookiecutter.__gh_slug}}/issues) to report them.
 
 ## License
 
