@@ -1,13 +1,12 @@
 {
-  "full_name": "Audrey M. Roy Greenfeld",
-  "email": "audreyfeldroy@example.com",
-  "github_username": "audreyfeldroy",
-  "pypi_package_name": "python-boilerplate",
+  "full_name": "Martin van der Schelling",
+  "email": "m.p.vanderschelling@tudelft.nl",
+  "github_username": "mpvanderschelling",
+  "pypi_package_name": "my-python-package",
   "project_name": "Python Boilerplate",
   "project_slug": "{{ cookiecutter.pypi_package_name.replace('-', '_') }}",
-  "project_short_description": "Python Boilerplate contains all the boilerplate you need to create a Python package.",
+  "project_short_description": "A short description of the package.",
   "pypi_username": "{{ cookiecutter.github_username }}",
   "first_version": "0.1.0",
-  "__gh_slug": "{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}",
-  "__friendly_data": "January 1 2000"
+  "__gh_slug": "{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}"
 }
