@@ -18,8 +18,7 @@ Cookiecutter is a command-line utility that creates projects from project templa
 
 Upon running the template, it will prompt you for some information about your new package, such as the package name, author name, and email address. After you provide this information, Cookiecutter will generate a new directory with the structure of a Python package.
 
-The template is compliant to the [Bessa Research Group Python Development Code of Conduct](https://github.com/bessagroup/python_code_of_conduct)
-
+The template is compliant to the [Bessa Research Group Python Development Code of Conduct](https://github.com/bessagroup/python_code_of_conduct). This template is adopted from the [cookiecutter-pypackage](https://github.com/audreyfeldroy/cookiecutter-pypackage) template by Audrey M. Roy Greenfeld.
 ## Statement of need
 
 Members of the Bessa Research Group can use this cookiecutter template to create new Python repositories. The template is compliant to the [Bessa Research Group Python Development Code of Conduct](https://github.com/bessagroup/python_code_of_conduct).
