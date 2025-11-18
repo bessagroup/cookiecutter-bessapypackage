@@ -48,5 +48,5 @@ Copyright (c) {% now 'local', '%Y' %}, {{ cookiecutter.full_name }}
 
 All rights reserved.
 
-This project is licensed under the BSD 3-Clause License. See [LICENSE](https://github.com/{{cookiecutter.__gh_slug}}/blob/main/LICENSE) for the full license text.
+This project is licensed under the BSD 3-Clause License. See [LICENSE](license.md) for the full license text.
 

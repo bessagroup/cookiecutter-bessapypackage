@@ -1,0 +1,24 @@
+name: release
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Release
+        uses: patrick-kidger/action_update_python_project@v8
+        with:
+          python-version: "{{cookiecutter.minimal_python_version}}"
+          test-script: |
+            cp -r ${{ github.workspace }}/tests ./tests
+            cp ${{ github.workspace }}/pyproject.toml ./pyproject.toml
+            uv sync --extra tests --no-install-project --inexact
+            uv run --no-sync pytest
+          pypi-token: {% raw %}${{ secrets.pypi_api_token }}{% endraw %}
+          github-user: bessagroup
+          github-token: {% raw %}${{ github.token }}{% endraw %}
+          allow-first-release: false
