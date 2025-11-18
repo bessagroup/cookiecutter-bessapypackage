@@ -10,6 +10,6 @@
   "project_keywords": "keyword1, keyword2, keyword3",
   "pypi_username": "{{ cookiecutter.github_username }}",
   "first_version": "0.1.0",
-  "minimal_python_version": "3.8",
+  "minimal_python_version": "3.11",
   "__gh_slug": "{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}"
 }
