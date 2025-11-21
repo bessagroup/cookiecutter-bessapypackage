@@ -57,20 +57,34 @@ You will be prompted to enter some information about your new package, such as t
 ### Filling in your project details
 
 When generating a new project using Cookiecutter, you are prompted to provide several fields that are then automatically substituted into project files such as `pyproject.toml`, `README.md`, package directory names, CI configuration, and licensing metadata. Below is an explanation of each field in this configuration template.
-| Keyword                  | Description                                                    | Used In                                                                                               | Example                          |
-|--------------------------|----------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|----------------------------------|
-| `full_name`              | Your full personal name                                        | Copyright headers, `LICENSE.md`, project metadata (author in `pyproject.toml`)                        | `Martin van der Schelling`       |
-| `email`                  | Primary contact email for the maintainer                      | `pyproject.toml` (`author_email`), support/contact in docs                                           | `name@example.com`               |
-| `affiliation`            | Institutional or company affiliation                           | `README.md` author section, documentation metadata                                                    | `TU Delft`                       |
-| `github_username`        | GitHub username or organization name                           | Repository URL config, GitHub links (issues), `README` badges/contributing                            | `mpvanderschelling`              |
-| `pypi_package_name`      | Name of the package on PyPI                                    | `pyproject.toml` metadata, PyPI uploads, README title                                                 | `my-python-package`              |
-| `project_name`           | Human-readable project name                                    | `README` title, documentation title pages, user-facing display names                                  | `Python Boilerplate`             |
-| `project_slug`           | Machine-safe project name (import path)                        | Package folder name, internal references                                                              | `my_python_package`              |
-| `project_short_description` | One-sentence summary of the project                        | README introduction, PyPI summary, docs headers                                                       | `A starter template for Python.` |
-| `project_keywords`       | Comma-separated descriptive keywords                           | PyPI search indexing, metadata in `pyproject.toml`                                                    | `template, boilerplate, python`  |
-| `pypi_username`          | Username for the PyPI account (often GitHub username)          | Publishing scripts, CI deployment configuration                                                       | `mpvanderschelling`              |
-| `first_version`          | Initial version number                                          | `pyproject.toml` version field                                                                        | `0.1.0`                          |
-| `minimal_python_version` | Lowest supported Python version                                | `pyproject.toml` dependencies, CI matrix, installation requirements                                   | `3.11`                            |
+| Keyword                      | Description                                                    | Used In                                                                                               | Example                          |
+|------------------------------|----------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|----------------------------------|
+| `full_name`                  | Your full personal name                                        | Copyright headers, `LICENSE.md`, project metadata (author in `pyproject.toml`)                        | `Martin van der Schelling`       |
+| `email`                      | Primary contact email for the maintainer                      | `pyproject.toml` (`author_email`), support/contact in docs                                            | `name@example.com`               |
+| `affiliation`                | Institutional or company affiliation                           | `README.md` author section, documentation metadata                                                    | `TU Delft`                       |
+| `github_username`            | GitHub username or organization name                           | Repository URL config, GitHub links (issues), `README.md` badges/contributing                         | `mpvanderschelling`              |
+| `pypi_package_name`          | Name of the package on PyPI                                    | `pyproject.toml` metadata, PyPI uploads, `README.md` title                                             | `my-python-package`              |
+| `project_name`               | Human-readable project name                                    | `README.md` title, documentation title pages, user-facing display names                               | `Python Boilerplate`             |
+| `project_slug`               | Machine-safe project name (import path)                        | Package folder name, internal references                                                              | `my_python_package`              |
+| `project_short_description`  | One-sentence summary of the project                            | `README.md` introduction, PyPI summary, docs headers                                                  | `A starter template for Python.` |
+| `project_keywords`           | Comma-separated descriptive keywords                           | PyPI search indexing, metadata in `pyproject.toml`                                                    | `template, boilerplate, python`  |
+| `pypi_username`              | Username for the PyPI account (often GitHub username)          | Publishing scripts, CI deployment configuration                                                       | `mpvanderschelling`              |
+| `first_version`              | Initial version number                                          | `pyproject.toml` version field                                                                        | `0.1.0`                          |
+| `minimal_python_version`     | Lowest supported Python version                                | `pyproject.toml` dependencies, CI matrix, installation requirements                                   | `3.11`                           |
+
+
+### Enabling certain behaviour
+
+After filling in the fields above, a new project directory is created. Some features of the template are disabled by default in order to automatically run unwanted services, such as publishing to PyPI of automatically linting the code. 
+
+To enable these features, you need to uncomment the content of the following files:
+
+| File / Workflow                          | Purpose                                                                                     | Action Required                                           |
+|------------------------------------------|---------------------------------------------------------------------------------------------|-----------------------------------------------------------|
+| `.pre_commit_config.yaml`                | Configure pre-commit hooks for automatic code linting and formatting                        | Uncomment the hooks you want to enable                    |
+| `.github/workflows/build_docs.yml`       | Generate and upload documentation artifacts automatically                                   | Uncomment to enable documentation build workflow          |
+| `.github/workflows/pull_request.yml`     | Automatically run tests on pull requests                                                    | Uncomment steps to enable PR testing                      |
+| `.github/workflows/release.yml`          | Publish package to PyPI when pushing to `main`                                              | Uncomment steps to enable automatic PyPI releases         |
 
 
 ## Community Support
