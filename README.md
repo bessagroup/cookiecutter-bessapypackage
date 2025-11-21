@@ -54,6 +54,8 @@ cookiecutter https://github.com/bessagroup/cookiecutter-bessapypackage.git
 
 You will be prompted to enter some information about your new package, such as the package name, author name, and email address. After you provide this information, Cookiecutter will generate a new directory with the structure of a Python package.
 
+**IMPORTANT: You do not clone this respository and work from it directly. The files contain template variables that need to be filled in when creating a new project. Instead, you use Cookiecutter to generate a new project based on this template.**
+
 ### Filling in your project details
 
 When generating a new project using Cookiecutter, you are prompted to provide several fields that are then automatically substituted into project files such as `pyproject.toml`, `README.md`, package directory names, CI configuration, and licensing metadata. Below is an explanation of each field in this configuration template.
